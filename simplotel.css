@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.header-container {
+    padding-right: 1%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    width: 99%;
+    border: 1px solid gray;
+}
+
+nav a {
+    color: #000000;
+    font-family: "Sans-Serif";
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    min-height: 20%;
+}
+
+.icons-container {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.call-icon {
+    width: 30%;
+    height: 60%;
+}
+
+.cart-icon {
+    width: 30%;
+    height: 60%;
+}
+
+.header-and-first-container {
+    box-shadow: 0px 0px 3px 3px rgba(173, 172, 172, 0.6);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 1%;
+    background-image: linear-gradient(to right, #fa2dc0, #f5b79a, #faf56e);
+}
+
+.first-container {
+    height: 70%;
+    width: 100%;
+    background-image: url("https://res.cloudinary.com/dxmnrzmsx/image/upload/v1697780169/img1_1_b70siw.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.inner-container {
+    background-color: #f7437c;
+    font-family: "roboto";
+    font-weight: 500;
+    height: 50%;
+    width: 75%;
+    color: #f7f5f5;
+    font-size: 80%;
+    margin: 4%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+    opacity: 0.6;
+}
+
+.inner-heading {
+    color: #fcfafa;
+    font-weight: bold;
+}
+
+@media screen and (min-width:700px) {
+    .header-and-first-container {
+        height: 70vh;
+    }
+
+    .first-container {
+        height: 80%;
+    }
+
+    .inner-container {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .inner-container {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width:699px) {
+    nav a {
+        font-size: 60%;
+    }
+
+    .icons-container {
+        font-size: 70%;
+    }
+
+    .inner-container {
+        min-height: 50%;
+        font-size: 60%;
+    }
+
+    .heading {
+        font-size: 80%;
+    }
+
+    .options {
+        border-top-right-radius: 20%;
+        border-bottom-left-radius: 20%;
+    }
+
+    .text {
+        font-size: 50%;
+        text-align: center;
+    }
+}
+
+.second-container {
+    box-shadow: 0px 0px 3px 3px rgba(173, 172, 172, 0.6);
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 5%;
+    background-image: linear-gradient(to right, #fa2dc0, #f5b79a, #faf56e);
+
+}
+
+.orders {
+    color: #f7f5f5;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 250%;
+}
+
+.orders-container {
+    list-style: none;
+    width: 90%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffffff;
+    width: 23%;
+    max-height: 40%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    padding: 2%;
+}
+
+.heading {
+    font-size: 100%;
+    font-family: "roboto";
+
+}
+
+.text {
+    font-size: 80%;
+    text-align: center;
+    font-family: "roboto";
+}
+
+.burger {
+    width: 100%;
+    height: 30vh;
+    border-top-right-radius: 30%;
+}
+
+.button {
+    margin: auto;
+    border-radius: 10%;
+    border-width: 0px;
+    padding: 2%;
+    width: 20%;
+    background-color: #e3e2e1;
+    font-size: 100%;
+    font-family: "roboto";
+    font-weight: bold;
+
+}
